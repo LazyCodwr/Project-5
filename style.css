@@ -4,24 +4,22 @@
 .boxes:hover .on{
     display: block;
 }
+.boxes:hover .hover{
+  border-color: white
+}
+.boxes:hover .color{
+  background-color: white
+}
+
+.box:hover #hover{
+  color: white;
+}
+.box:hover i{
+  background-color: white;
+  color: black;
+}
 
 swiper-container {
     width: 100%;
     height: 100%;
-  }
-
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }

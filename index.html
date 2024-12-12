@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nourish</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"
 />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assests/images/Star.svg" type="image/x-icon">
 </head>
 <body>
 
-    <main class="p-5 max-[800px]:p-0">
+    <main class="p-5 max-[800px]:p-0 overflow-hidden">
 
-        <nav class="w-full h-16 flex items-center justify-between px-14 max-[800px]:px-4 fixed top-8 left-0 max-[800px]:top-2 z-[9999]">
-            <div class="logo bg-white rounded-full bg-white/50 rounded-full px-2 py-2 ">
+        <nav class="w-full h-16 flex items-center justify-between px-14 max-[800px]:px-4 fixed top-8 left-0 max-[800px]:top-2 z-[9999] max-[800px]:backdrop-blur-sm">
+            <div class="logo bg-white rounded-full bg-white/50 rounded-full px-2 py-2 animate__animated animate__fadeInDown">
                 <h1 class="bg-white rounded-full px-4 py-1 flex items-center justify-between gap-2 text-xl"><img class="w-[2vw]" src="/Assests/images/Star.svg" alt="">Nourish</h1>
             </div>
             <div class="links pl-5 max-[800px]:hidden">
-                <ul class="flex items-center justify-between bg-white/50 rounded-full py-2 px-3 gap-2">
+                <ul class="flex items-center justify-between bg-white/50 rounded-full py-2 px-3 gap-2 animate__animated animate__fadeInDown">
                     <li class="bg-white py-1 px-6 cursor-pointer rounded-full hover:text-[#2D7DDA] transition-all">Features</li>
                     <li class="bg-white py-1 px-6 cursor-pointer rounded-full hover:text-[#2D7DDA] transition-all">Program</li>
                     <li class="bg-white py-1 px-6 cursor-pointer rounded-full hover:text-[#2D7DDA] transition-all">Review</li>
@@ -28,12 +33,13 @@
                     <li class="bg-white py-1 px-6 cursor-pointer rounded-full hover:text-[#2D7DDA] transition-all">Contacts</li>
                 </ul>
             </div>
-            <button class="bg-white/50 rounded-full px-2 py-2 text-xl transition-all hover:scale-105"><h1 class="bg-white border-[1px] border-black px-8 py-1 rounded-full">Go On Trip</h1></button>
+            <button class="bg-white/50 rounded-full px-2 py-2 text-xl transition-all hover:scale-105 max-[800px]:hidden animate__animated animate__fadeInDown"><h1 class="bg-white border-[1px] border-black px-8 py-1 rounded-full">Go On Trip</h1></button>
+            <i class="ri-menu-3-line text-3xl bg-white rounded-full px-3 py-2 text-xl transition-all hover:scale-105 animate__animated animate__fadeInDown hidden max-[800px]:block"></i>
         </nav>
 
-        <section class="hero h-[95vh] max-[800px]:h-screen w-full bg-[#CCE9FF] rounded-[3vw] flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-12">
+        <section class="hero h-[95vh] max-[800px]:h-screen w-full bg-[#CCE9FF] rounded-[3vw] flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-12 animate__animated animate__fadeIn">
             <div class="left w-[55%] max-[800px]:w-full h-full flex items-end justify-end flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
-                <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2 animate__animated animate__fadeInLeft">
                     <div class="text1 flex items-center justify-start leading-none gap-6">
                         <h1 class="text-[5vw] font-semibold">Adventure</h1>
                         <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
@@ -46,32 +52,32 @@
                         <button class="py-2 px-4 border-[1px] border-black rounded-full text-black hover:scale-105 transition-all">Get a consuitation</button>
                     </div>
                 </div>
-                <div class="box h-[30%] max-[800px]:h-full w-full flex items-center justify-between">
+                <div class="box h-[30%] max-[800px]:h-full w-full flex items-center justify-between max-[800px]:mt-2 animate__animated animate__fadeInLeft">
                     <div class="boxes transition-colors relative h-full rounded-[2vw] bg-[#E5F4FF] text-[#2D7DDA] hover:bg-[#2D7DDA] hover:text-white w-[32%] flex items-start px-6 justify-center flex-col">
-                        <h1 class="text-[3.5vw] font-semibold leading-none mb-3">10k+</h1>
-                        <h3 class="text-[1.3vw] leading-none">Happy</h3>
-                        <h3 class="text-[1.3vw] leading-none">customers</h3>
-                        <img class="on w-[3vw] absolute top-5 right-5" src="/Assests/images/Star.svg" alt="">
-                        <img class="out w-[3vw] absolute top-5 right-5" src="/Assests/images/Star 1.svg" alt="">
+                        <h1 class="text-[3.5vw] font-semibold leading-none mb-3 max-[800px]:text-[5vw]">10k+</h1>
+                        <h3 class="text-[1.3vw] leading-none max-[800px]:text-[3vw]">Happy</h3>
+                        <h3 class="text-[1.3vw] leading-none max-[800px]:text-[3vw]">customers</h3>
+                        <img class="on w-[3vw] absolute top-5 right-5 max-[800px]:top-2 max-[800px]:right-2" src="/Assests/images/Star.svg" alt="">
+                        <img class="out w-[3vw] absolute top-5 right-5 max-[800px]:top-2 max-[800px]:right-2" src="/Assests/images/Star 1.svg" alt="">
                     </div>
                     <div class="boxes transition-colors relative h-full rounded-[2vw] bg-[#E5F4FF] text-[#2D7DDA] hover:bg-[#2D7DDA] hover:text-white w-[32%] flex items-start px-6 justify-center flex-col">
-                        <h1 class="text-[3.5vw] font-semibold leading-none mb-3">1k+</h1>
-                        <h3 class="text-[1.3vw] leading-none">Happy</h3>
-                        <h3 class="text-[1.3vw] leading-none">customers</h3>
-                        <img class="on w-[3vw] absolute top-5 right-5" src="/Assests/images/Star.svg" alt="">
-                        <img class="out w-[3vw] absolute top-5 right-5" src="/Assests/images/Star 1.svg" alt="">
+                        <h1 class="text-[3.5vw] font-semibold leading-none mb-3 max-[800px]:text-[5vw]">1k+</h1>
+                        <h3 class="text-[1.3vw] leading-none max-[800px]:text-[3vw]">Happy</h3>
+                        <h3 class="text-[1.3vw] leading-none max-[800px]:text-[3vw]">customers</h3>
+                        <img class="on w-[3vw] absolute top-5 right-5 max-[800px]:top-2 max-[800px]:right-2" src="/Assests/images/Star.svg" alt="">
+                        <img class="out w-[3vw] absolute top-5 right-5 max-[800px]:top-2 max-[800px]:right-2" src="/Assests/images/Star 1.svg" alt="">
                     </div>
                     <div class="boxes transition-colors relative h-full rounded-[2vw] bg-[#E5F4FF] text-[#2D7DDA] hover:bg-[#2D7DDA] hover:text-white w-[32%] flex items-start px-6 justify-center flex-col">
-                        <h1 class="text-[3.5vw] font-semibold leading-none mb-3">10+</h1>
-                        <h3 class="text-[1.3vw] leading-none">Happy</h3>
-                        <h3 class="text-[1.3vw] leading-none">customers</h3>
-                        <img class="on w-[3vw] absolute top-5 right-5" src="/Assests/images/Star.svg" alt="">
-                        <img class="out w-[3vw] absolute top-5 right-5" src="/Assests/images/Star 1.svg" alt="">
+                        <h1 class="text-[3.5vw] font-semibold leading-none mb-3 max-[800px]:text-[5vw]">10+</h1>
+                        <h3 class="text-[1.3vw] leading-none max-[800px]:text-[3vw]">Happy</h3>
+                        <h3 class="text-[1.3vw] leading-none max-[800px]:text-[3vw]">customers</h3>
+                        <img class="on w-[3vw] absolute top-5 right-5 max-[800px]:top-2 max-[800px]:right-2" src="/Assests/images/Star.svg" alt="">
+                        <img class="out w-[3vw] absolute top-5 right-5 max-[800px]:top-2 max-[800px]:right-2" src="/Assests/images/Star 1.svg" alt="">
                     </div>
                     
                 </div>
             </div>
-            <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4 animate__animated animate__fadeInRight">
                 <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
                     <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                 </div>
@@ -122,22 +128,238 @@
 
         <section class="h-screen w-full mt-12">
             <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" loop="true" space-between="30"
-    centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-    <swiper-slide>Slide 1</swiper-slide>
-    <swiper-slide>Slide 2</swiper-slide>
-    <swiper-slide>Slide 3</swiper-slide>
-    <swiper-slide>Slide 4</swiper-slide>
-    <swiper-slide>Slide 5</swiper-slide>
-    <swiper-slide>Slide 6</swiper-slide>
-    <swiper-slide>Slide 7</swiper-slide>
-    <swiper-slide>Slide 8</swiper-slide>
-    <swiper-slide>Slide 9</swiper-slide>
+    centered-slides="true" autoplay-delay="250000" autoplay-disable-on-interaction="false">
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4 animate__animated animate__fadeInRight">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4 animate__animated animate__fadeInRight">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2 animate__animated animate__fadeInLeft">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
+    <swiper-slide class="w-full h-full flex max-[800px]:h-screen w-full flex items-center justify-between gap-6 max-[800px]:justify-center max-[800px]:gap-0 max-[800px]:flex-col-reverse max-[800px]:pt-0">
+        <div class="left w-[55%] max-[800px]:w-full h-full flex items-start justify-center flex-col py-10 pl-10 max-[800px]:pr-4 max-[800px]:pl-4 gap-4">
+            <div class="box h-[55%] max-[800px]:h-full w-full bg-white rounded-[2vw] flex flex-col px-6 py-2">
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] mb-4 w-[16%] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <div class="text1 flex items-center justify-start leading-none gap-6">
+                    <h1 class="text-[5vw] font-semibold">Adventure to</h1>
+                    <img class="w-[4vw] pt-3" src="/Assests/images/Star.svg" alt="">
+                </div>
+                <h1 class="text-[5vw] font-semibold z-[2] -mt-[1vw] text-[#2D7DDA]">Sorapis lake</h1>
+                <img class="w-[75%] max-[800px]:w-[50%] z-[1] -mt-5 mb-4" src="/Assests/images/Vector.svg" alt="">
+                <p>Explore scenic trails to mangnificent waterfalls, surrounded by lush landscapes that invigorate your sences and forge unforgatteable memories in nature.</p>
+                <div class="btn mt-4">
+                    <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Go on a trip!<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="right max-[800px]:-mb-[12vw] w-[45%] max-[800px]:w-full h-full flex items-end justify-between gap-4 py-10 pr-10 max-[800px]:pl-4 max-[800px]:pr-4">
+            <div class="box h-[89%] max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <div class="box h-[89%] max-[800px]:h-full w-[70%] rounded-[2vw] bg-emerald-800 overflow-hidden">
+                <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1516655855035-d5215bcb5604?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </swiper-slide>
   </swiper-container>
         </section>
 
         <section class="h-screen w-full pt-[8vw]">
             <div class="top-txt flex items-center justify-center flex-col">
-                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] text-xl text-semibold rounded-full py-1 px-4">Features</h3>
+                <h3 class="bg-[#E4F4FF] text-[#2D7DDA] text-xl text-semibold rounded-full py-1 px-4">Reviews</h3>
                 <h1 class="flex items-center justify-center z-[2] text-[#2D7DDA] text-[5vw] font-semibold max-[800px]:text-[7vw]">What our <span class="w-[8vw] mx-4 max-[800px]:mx-2 mt-4 max-[800px]:mt-1 h-[4vw] max-[800px]:w-[10vw] max-[800px]:h-[6vw] overflow-hidden inline-block rounded-full hover:-translate-y-1 transition-all"><img class="object-cover" src="https://plus.unsplash.com/premium_photo-1661814278311-d59ab0b4a676?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>coustomers feel</h1>
                 <img class="ml-[35vw] -mt-[1.5vw] z-[1] max-[800px]:w-1/2 max-[800px]:ml-[45vw]" src="/Assests/images/Vector.svg" alt="">
                 <h1 class="text-[5vw] font-semibold leading-none max-[800px]:text-[7vw] flex items-center justify-center">about us <span class="w-[8vw] mx-4 max-[800px]:mx-2 mt-4 max-[800px]:mt-1 h-[4vw] max-[800px]:w-[10vw] max-[800px]:h-[6vw] overflow-hidden inline-block rounded-full hover:-translate-y-1 transition-all"><img src="https://plus.unsplash.com/premium_photo-1683120696370-54a46af0532f?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></span><img class="w-[4vw] mt-3 ml-2" src="/Assests/images/Star.svg" alt=""></h1>
@@ -146,46 +368,46 @@
 
             <div class="box h-1/2 w-full flex items-center justify-between max-[800px]:justify-center px-4 gap-6 max-[800px]:gap-4 mt-12 max-[800px]:flex-wrap">
                 <div class="boxes transition-all relative h-full max-[800px]:h-[60%] rounded-[2vw] bg-[#F9F9F9] text-black hover:bg-[#2D7DDA] hover:text-white w-[32%] max-[800px]:w-[45%] flex items-start px-6 max-[800px]:px-2 justify-start py-6 max-[800px]:py-2 flex-col">
-                    <h1 class="font-semibold leading-none border-[1px] py-2 px-4 rounded-full border-black mb-6 max-[800px]:mb-2 max-[800px]:text-[7vw] flex items-center justify-center gap-2">2023 <span class="inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>September trip</h1>
+                    <h1 class="hover font-semibold leading-none border-[1px] py-2 max-[800px]:py-1 px-4 max-[800px]:py-2 rounded-full border-black mb-6 max-[800px]:mb-2 flex items-center justify-center gap-2">2023 <span class="color inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>September trip</h1>
                     <h3 class="text-[1vw] max-[800px]:text-[3vw]"><strong>This adventure was a dream - </strong>exciting excurious and stunning surrounding mode every moment deeply transformative.</h3>
                     <div class="w-full flex items-center justify-center gap-4 mt-10">
                         <span class="overflow-hidden w-[5vw] h-[4vw] rounded-full"><img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1613005798967-632017e477c8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
                         <div class="w-full flex items-start justify-between flex-col">
                             <h1 class="text-lg font-semibold">Maya Khan</h1>
-                            <h1>Fitness Trainer</h1>
+                            <h1 class="max-[800px]:text-[3vw]">Fitness Trainer</h1>
                         </div>
                     </div>
                 </div>
                 <div class="boxes transition-all relative h-full max-[800px]:h-[60%] rounded-[2vw] bg-[#F9F9F9] text-black hover:bg-[#2D7DDA] hover:text-white w-[32%] max-[800px]:w-[45%] flex items-start px-6 max-[800px]:px-2 justify-start py-6 max-[800px]:py-2 flex-col">
-                    <h1 class="font-semibold leading-none border-[1px] py-2 px-4 rounded-full border-black mb-6 max-[800px]:mb-2 max-[800px]:text-[7vw] flex items-center justify-center gap-2">2024 <span class="inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>April trip</h1>
+                    <h1 class="hover font-semibold leading-none border-[1px] py-2 max-[800px]:py-1 px-4 max-[800px]:py-2 rounded-full border-black mb-6 max-[800px]:mb-2 flex items-center justify-center gap-2">2024 <span class="color inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>April trip</h1>
                     <h3 class="text-[1vw] max-[800px]:text-[3vw]"><strong>This adventure was a dream - </strong>exciting excurious and stunning surrounding mode every moment deeply transformative.</h3>
                     <div class="w-full flex items-center justify-center gap-4 mt-10">
                         <span class="overflow-hidden w-[5vw] h-[4vw] rounded-full"><img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1721909795454-1cf6ee50f8cf?q=80&w=1392&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
                         <div class="w-full flex items-start justify-between flex-col">
                             <h1 class="text-lg font-semibold">Mohd. Khan</h1>
-                            <h1>World Explorer</h1>
+                            <h1 class="max-[800px]:text-[3vw]">World Explorer</h1>
                         </div>
                     </div>
                 </div>
                 <div class="boxes transition-all relative h-full max-[800px]:h-[60%] rounded-[2vw] bg-[#F9F9F9] text-black hover:bg-[#2D7DDA] hover:text-white w-[32%] max-[800px]:w-[45%] flex items-start px-6 max-[800px]:px-2 justify-start py-6 max-[800px]:py-2 flex-col">
-                    <h1 class="font-semibold leading-none border-[1px] py-2 px-4 rounded-full border-black mb-6 max-[800px]:mb-2 max-[800px]:text-[7vw] flex items-center justify-center gap-2">2024 <span class="inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>June trip</h1>
+                    <h1 class="hover font-semibold leading-none border-[1px] py-2 max-[800px]:py-1 px-4 max-[800px]:py-2 rounded-full border-black mb-6 max-[800px]:mb-2 flex items-center justify-center gap-2">2024 <span class="color inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>June trip</h1>
                     <h3 class="text-[1vw] max-[800px]:text-[3vw]"><strong>This adventure was a dream - </strong>exciting excurious and stunning surrounding mode every moment deeply transformative.</h3>
                     <div class="w-full flex items-center justify-center gap-4 mt-10">
                         <span class="overflow-hidden w-[5vw] h-[4vw] rounded-full"><img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1536829241834-528a91a8b28e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
                         <div class="w-full flex items-start justify-between flex-col">
-                            <h1 class="text-lg font-semibold">Willium Patnaker</h1>
-                            <h1>Ai</h1>
+                            <h1 class="text-lg font-semibold max-[800px]:text-[3.5vw]">Willium Patnaker</h1>
+                            <h1 class="max-[800px]:text-[3vw]">Ai</h1>
                         </div>
                     </div>
                 </div>
                 <div class="boxes transition-all relative h-full max-[800px]:h-[60%] rounded-[2vw] bg-[#F9F9F9] text-black hover:bg-[#2D7DDA] hover:text-white w-[32%] max-[800px]:w-[45%] flex items-start px-6 max-[800px]:px-2 justify-start py-6 max-[800px]:py-2 flex-col">
-                    <h1 class="font-semibold leading-none border-[1px] py-2 px-4 rounded-full border-black mb-6 max-[800px]:mb-2 max-[800px]:text-[7vw] flex items-center justify-center gap-2">2024 <span class="inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>August trip</h1>
+                    <h1 class="hover font-semibold leading-none border-[1px] py-2 max-[800px]:py-1 px-4 max-[800px]:py-2 rounded-full border-black mb-6 max-[800px]:mb-2 flex items-center justify-center gap-2">2024 <span class="color inline-block rounded-full w-2 h-2 bg-[#2D7DDA]"></span>August trip</h1>
                     <h3 class="text-[1vw] max-[800px]:text-[3vw]"><strong>This adventure was a dream - </strong>exciting excurious and stunning surrounding mode every moment deeply transformative.</h3>
                     <div class="w-full flex items-center justify-center gap-4 mt-10">
                         <span class="overflow-hidden w-[5vw] h-[4vw] rounded-full"><img class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></span>
                         <div class="w-full flex items-start justify-between flex-col">
-                            <h1 class="text-lg font-semibold">Katty andheri</h1>
-                            <h1>Human</h1>
+                            <h1 class="text-lg font-semibold max-[800px]:text-[3.5vw]">Katty andheri</h1>
+                            <h1 class="max-[800px]:text-[3vw]">Human</h1>
                         </div>
                     </div>
                 </div>
@@ -194,46 +416,46 @@
         
         </section>
         
-        <section class="h-screen w-full pt-[8vw]">
+        <section class="h-screen w-full pt-[8vw] max-[800px]:pt-0 max-[800px]:h-fit max-[800px]:pb-[8vw]">  
             <div class="toptxt w-full flex items-center justify-between px-6 max-[800px]:flex-col">
-                <h1 class="w-full flex items-center justify-start gap-4 text-[4vw] font-semibold">Frequently asked <span class="text-[#2D7DDA]">questions </span><img class="w-[3vw] mt-3" src="/Assests/images/Star.svg" alt=""></h1>
+                <h1 class="w-full flex items-center justify-start gap-4 text-[4vw] font-semibold max-[800px]:text-[6vw]">Frequently asked <span class="text-[#2D7DDA]">questions </span><img class="w-[3vw] mt-3" src="/Assests/images/Star.svg" alt=""></h1>
                 <div class="w-[30%] max-[800px]:w-full">
                     <h3 class="">Get the answer you need below if you cant find them, <u><b>reach pout to us</b></u></h3>
                     <h3></h3>
                 </div>
             </div>
-            <div class="btm mt-10">
-                <div class="box flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
+            <div class="btm mt-10 flex items-center justify-between flex-col gap-4">
+                <div class="box hover:bg-[#2D7DDA] transition-all flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
                     <div class="flex w-full h-full items-center justify-start gap-4 px-6">
-                        <h1 class="text-[#2D7DDA] text-[3vw] font-semibold">/01</h1>
-                    <h1 class="text-[3vw] font-semibold">What is  Nourish?</h1>
+                        <h1 id="hover" class="text-[#2D7DDA] text-[3vw] font-semibold max-[800px]:text-[5vw]">/01</h1>
+                    <h1 id="hover" class="text-[3vw] font-semibold max-[800px]:text-[5vw]">What is  Nourish?</h1>
                     </div>
                     <div>
                         <i class="ri-arrow-up-line mr-6 px-6 py-6 rounded-full bg-black text-white"></i>
                     </div>
                 </div>
-                <div class="box flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
+                <div class="box hover:bg-[#2D7DDA] transition-all flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
                     <div class="flex w-full h-full items-center justify-start gap-4 px-6">
-                        <h1 class="text-[#2D7DDA] text-[3vw] font-semibold">/02</h1>
-                    <h1 class="text-[3vw] font-semibold">Wher is the Next trip?</h1>
+                        <h1 id="hover" class="text-[#2D7DDA] text-[3vw] font-semibold max-[800px]:text-[5vw]">/02</h1>
+                    <h1 id="hover" class="text-[3vw] font-semibold max-[800px]:text-[5vw]">Wher is the Next trip?</h1>
                     </div>
                     <div>
                         <i class="ri-arrow-up-line mr-6 px-6 py-6 rounded-full bg-black text-white"></i>
                     </div>
                 </div>
-                <div class="box flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
+                <div class="box hover:bg-[#2D7DDA] transition-all flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
                     <div class="flex w-full h-full items-center justify-start gap-4 px-6">
-                        <h1 class="text-[#2D7DDA] text-[3vw] font-semibold">/03</h1>
-                    <h1 class="text-[3vw] font-semibold">When is the next trip?</h1>
+                        <h1 id="hover" class="text-[#2D7DDA] text-[3vw] font-semibold max-[800px]:text-[5vw]">/03</h1>
+                    <h1 id="hover" class="text-[3vw] font-semibold max-[800px]:text-[5vw]">When is the next trip?</h1>
                     </div>
                     <div>
                         <i class="ri-arrow-up-line mr-6 px-6 py-6 rounded-full bg-black text-white"></i>
                     </div>
                 </div>
-                <div class="box flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
+                <div class="box hover:bg-[#2D7DDA] transition-all flex items-center justify-between w-full h-32 bg-[#F9F9F9] rounded-2xl">
                     <div class="flex w-full h-full items-center justify-start gap-4 px-6">
-                        <h1 class="text-[#2D7DDA] text-[3vw] font-semibold">/04</h1>
-                    <h1 class="text-[3vw] font-semibold">What epuipment i nedd to have?</h1>
+                        <h1 id="hover" class="text-[#2D7DDA] text-[3vw] font-semibold max-[800px]:text-[5vw]">/04</h1>
+                    <h1 id="hover" class="text-[3vw] font-semibold max-[800px]:text-[5vw]">What epuipment i need to have?</h1>
                     </div>
                     <div>
                         <i class="ri-arrow-up-line mr-6 px-6 py-6 rounded-full bg-black text-white"></i>
@@ -242,11 +464,11 @@
             </div>
         </section>
 
-        <section class="h-[80vh] w-full max-[800px]:h-fit flex items-start justify-center max-[800px]:flex-col gap-6 bg-[#2D7DDA] mt-[8vw] max-[800px]:mt-0 rounded-[3vw] p-10 max-[800px]:flex-col">
-                <div class="left h-full w-full bg-white rounded-[2vw] p-10">
-                    <h1 class="text-[5vw] font-semibold flex gap-2">Get in touch <img class="w-[4vw] mt-3" src="/Assests/images/Star.svg" alt=""></h1>
-                    <h3 class="text-lg text-gray-700 mt-6"><b>If you have any questions or need assistance,</b> feel free to reach out to us! Our team is here to help you with any inquiries you may have, whether it's about our services, upcoming trips, or general advice. Don't hesitate to contact us for personalized support!</h3>
-                    <div class="contact-info flex items-center justify-start mt-12 flex-col">
+        <section class="h-[80vh] w-full max-[800px]:h-fit flex items-start justify-center max-[800px]:flex-col gap-6 bg-[#CCE9FF] mt-[20vw] max-[800px]:mt-0 rounded-[3vw] p-10 max-[800px]:p-6 max-[800px]:flex-col">
+                <div class="left h-full w-full bg-white rounded-[2vw] p-10 max-[800px]:p-6">
+                    <h1 class="text-[5vw] font-semibold flex gap-2 max-[800px]:text-[8vw]">Get in touch <img class="w-[4vw] mt-3 max-[800px]:mt-0 max-[800px]:w-[6vw]" src="/Assests/images/Star.svg" alt=""></h1>
+                    <h3 class="text-lg text-gray-700 mt-6 max-[800px]:mt-2 max-[800px]:text-[4vw] max-[800px]:leading-none"><b>If you have any questions or need assistance,</b> feel free to reach out to us! Our team is here to help you with any inquiries you may have, whether it's about our services, upcoming trips, or general advice. Don't hesitate to contact us for personalized support!</h3>
+                    <div class="contact-info flex items-center justify-start mt-12 max-[800px]:flex-col gap-2">
                         <div class="address w-full flex items-center">
                             <i class="ri-map-pin-line text-[#2D7DDA] mr-2"></i>
                             <span>Am Eichenhain 12, 80805 München, Germany</span>
@@ -258,18 +480,71 @@
                     </div>
                 </div>
 
-                <div class="contact-form w-full h-full bg-white rounded-[2vw] py-10 px-10">
-                    <div class="flex gap-4 mb-4 flex-col">
-                        <input type="text" placeholder="First name" class="w-full p-3 border border-gray-300 rounded-xl" />
-                        <input type="text" placeholder="Last name" class="w-full p-3 border border-gray-300 rounded-xl" />
+                <div class="contact-form w-full h-full rounded-[2vw] py-10 px-10 max-[800px]:py-0 max-[800px]:px-0">
+                    <div class="flex gap-10 mb-4">
+                        <div class="w-full">
+                            <label for="first" class=" text-gray-700">First Name</label>
+                        <input id="first" type="text" placeholder="First name" class="w-full mt-2 p-3 border border-gray-300 rounded-xl outline-[#2D7DDA]" />
+                        </div>
+                        <div class="w-full">
+                            <label for="last" class=" text-gray-700">Last Name</label>
+                        <input id="last" type="text" placeholder="Last name" class="w-full mt-2 p-3 border border-gray-300 rounded-xl outline-[#2D7DDA]" />
+                        </div>
                     </div>
-                    <input type="email" placeholder="Your email" class="w-full p-3 border border-gray-300 rounded-xl mb-4" />
-                    <textarea placeholder="Write your thoughts to us!" class="w-full p-3 border border-gray-300 rounded-xl mb-4" rows="4"></textarea>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Your email" class="w-full mt-2 p-3 border border-gray-300 rounded-xl outline-[#2D7DDA] mb-4" />
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write your thoughts to us!" class="w-full mt-2 p-3 border border-gray-300 rounded-xl mb-4 outline-[#2D7DDA]" rows="4"></textarea>
                     <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mb-2 hover:scale-105 transition-all">Send Message<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
 
                 </div>
         
         </section>
+
+        <footer class="h-[80vh] max-[800px]:h-full w-full bg-[#F9F9F9] scale-105 rounded-[3vw] py-8 px-10 max-[800px]:p-0 mt-[8vw] max-[800px]:mt-14">
+            <div class="top w-full h-[70%] max-[800px]:h-screen bg-[#CCE9FF] rounded-[2vw] p-16 max-[800px]:p-8 flex items-center justify-between gap-10 max-[800px]:flex-col">
+                <div class="left w-[60%] max-[800px]:w-full h-full max-[800px]:h-[35%] bg-white rounded-[1.5vw] flex flex-col p-5 relative">
+                    <h1 class="text-[2vw] text-[#2D7DDA] z-[2] font-semibold max-[800px]:text-[5vw]">Ignite your sense Of adventure, <span class="text-black"> dive into transformative exploration !</span></h1>
+                    <img class="absolute top-14 left-7 z-[1] max-[800px]:w-[80%] max-[800px]:top-12" src="/Assests/images/Vector.svg" alt="">
+                    <img class="absolute top-16 right-[36%] w-[2.5vw] max-[800px]:w-[6vw] max-[800px]:right-[20%] max-[800px]:top-14" src="/Assests/images/Star.svg" alt="">
+                    <div class="flex items-center justify-between max-[800px]:flex-col mt-8 max-[800px]:mt-4">
+                        <h3 class="w-[60%] max-[800px]:w-full max-[800px]:text-lg max-[800px]:leading-tight">Embark on unforgatteable adventure that inspire growth and explore stunning landscapes.</h3>
+                        <button class="py-2 px-6 bg-[#1A2323] rounded-full text-white relative pr-14 mr-2 max-[800px]:mt-6 hover:scale-105 transition-all">Send Message<i class="ri-arrow-right-line w-8 h-8 flex items-center justify-center absolute top-1 right-1 rounded-full bg-white text-black"></i></button>
+                    </div>
+                </div>
+                <div class="w-[40%] h-full max-[800px]:h-[65%] max-[800px]:w-full">
+                    <div class="right w-full max-[800px]:w-full h-full flex items-end justify-between gap-4">
+                        <div class="box h-full max-[800px]:h-full w-[30%] rounded-[2vw] bg-yellow-800 overflow-hidden">
+                            <img class="w-full h-full object-cover object-left" src="https://images.unsplash.com/photo-1587502537147-2ba64a62e3d3?q=80&w=1596&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="box h-full max-[800px]:h-full w-full rounded-[2vw] bg-emerald-800 overflow-hidden">
+                            <img class="w-full h-full object-cover object-center" src="https://images.unsplash.com/photo-1587502537147-2ba64a62e3d3?q=80&w=1596&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btm w-full h-[30%] max-[800px]:h-fit mt-10 max-[800px]:mt-2 max-[800px]:mb-12 flex flex-col">
+                <div class="top w-full h-1/2 max-[800px]:h-fit flex items-center justify-between py-6 border-b-2 max-[800px]:flex-col">
+                    <div class="left h-full w-1/2 max-[800px]:w-full max-[800px]:px-2">
+                        <div class="flex gap-2 items-center justify-start max-[800px]:justify-center">
+                            <img class="w-[2vw] max-[800px]:w-[6vw]" src="/Assests/images/Star.svg" alt="">
+                            <h1 class="text-2xl font-semibold">Nourish</h1>
+                        </div>
+                    </div>
+                    <div class="right h-full w-1/2 max-[800px]:w-full">
+                        <ul class="flex items-center justify-end gap-6 max-[800px]:justify-center mt-4">
+                            <li class="font-semibold">Facebook</li>
+                            <li class="font-semibold">X/Twitter.com</li>
+                            <li class="font-semibold">Instagram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="btm w-full h-1/2 max-[800px]:h-1/2 flex items-center justify-between max-[800px]:pt-5 max-[800px]:px-6">
+                    <h1>All right reserved</h1>
+                    <h1 class="font-semibold"><u>Privacy Policy</u></h1>
+                </div>
+            </div>
+        </footer>
 
     </main>
     
